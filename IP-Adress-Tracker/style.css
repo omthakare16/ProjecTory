@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  padding-block: 40px;
+  text-align: center;
+  background-image: url("./images/pattern-bg.png");
+
+  background-size: cover;
+  height: 250px;
+}
+input {
+  margin-top: 30px;
+  border-radius: 10px 0px 0px 10px;
+  height: 53px;
+  border: 0;
+  font-size: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding-left: 20px;
+  font-weight: 500;
+  width: 25vw;
+}
+.btn {
+  background-color: #2a2a2ac5;
+  border: 0;
+  height: 56px;
+  padding-top: 2.6px;
+  width: 50px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.res-con {
+  display: flex;
+  text-align: center;
+}
+
+.result {
+  display: flex;
+  position: absolute;
+  gap: 8vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  z-index: 321;
+
+  justify-items: center;
+  font-size: 17px;
+
+  height: 140px;
+
+  align-items: center;
+  padding-inline: 20px;
+
+  top: 260px;
+  left: 28vw;
+
+  background-color: rgb(255, 250, 250);
+  border-radius: 15px;
+}
+
+#adrs div,
+#loc div,
+#timez div,
+#internet div {
+  font-weight: 600;
+}
+
+#map {
+  height: 63vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 774px) {
+  input {
+    width: 60vw;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-block: 30px;
+    gap: 10px;
+    scale: 0.91;
+
+    width: 300px;
+    top: 200px;
+    font-size: 20px;
+    left: 9vw;
+  }
+  #adrs div,
+  #loc div,
+  #timez div,
+  #internet div {
+    font-weight: 700;
+  }
+}

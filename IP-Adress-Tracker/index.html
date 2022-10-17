@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+
+    <title>IP Address Tracker</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <div>IP Address Tracker</div>
+      <div>
+        <input type="text" placeholder="Search for any IP" /><button
+          class="btn"
+        >
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="res-con">
+      <div class="result">
+        <div id="adrs">IP Address</div>
+        <div id="loc">Location</div>
+        <div id="timez">Timezone</div>
+        <div id="internet">ISP</div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://github.com/BitByte-TPC" target="_blank"
+        >TPC</a
+      >. Coded by <a href="https://github.com/omthakare16">@omthakare16</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
