@@ -45,7 +45,7 @@ input {
 
 .result {
   display: flex;
-  position: absolute;
+  position: relative;
   gap: 8vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -61,8 +61,8 @@ input {
   align-items: center;
   padding-inline: 20px;
 
-  top: 260px;
-  left: 28vw;
+  top: -74px;
+  margin: auto;
 
   background-color: rgb(255, 250, 250);
   border-radius: 15px;
@@ -79,6 +79,7 @@ input {
   height: 63vh;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 0;
+  top: -140px;
 }
 
 @media screen and (max-width: 774px) {
@@ -87,22 +88,25 @@ input {
   }
 
   .result {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     height: auto;
     padding-block: 30px;
     gap: 10px;
     scale: 0.91;
 
-    width: 300px;
-    top: 200px;
+    width: auto;
+    top: -140px;
     font-size: 20px;
-    left: 9vw;
+    /* left: 9vw; */
   }
   #adrs div,
   #loc div,
   #timez div,
   #internet div {
     font-weight: 700;
+  }
+  #map{
+    top: -290px;
   }
 }
