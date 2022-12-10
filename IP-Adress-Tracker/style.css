@@ -82,6 +82,10 @@ input {
   top: -140px;
 }
 
+.attribution{
+  margin-top:-139px;
+}
+
 @media screen and (max-width: 774px) {
   input {
     width: 60vw;
